@@ -1,0 +1,11 @@
+C:\Saad\Computer Science\Practical\Programs\Zombie Survival\Zombie Survival\bin\Debug\Zombie Survival.exe.config
+C:\Saad\Computer Science\Practical\Programs\Zombie Survival\Zombie Survival\bin\Debug\Zombie Survival.exe
+C:\Saad\Computer Science\Practical\Programs\Zombie Survival\Zombie Survival\bin\Debug\Zombie Survival.pdb
+C:\Saad\Computer Science\Practical\Programs\Zombie Survival\Zombie Survival\obj\Debug\Zombie Survival.csproj.AssemblyReference.cache
+C:\Saad\Computer Science\Practical\Programs\Zombie Survival\Zombie Survival\obj\Debug\Zombie_Survival.frmGame.resources
+C:\Saad\Computer Science\Practical\Programs\Zombie Survival\Zombie Survival\obj\Debug\Zombie_Survival.Properties.Resources.resources
+C:\Saad\Computer Science\Practical\Programs\Zombie Survival\Zombie Survival\obj\Debug\Zombie Survival.csproj.GenerateResource.cache
+C:\Saad\Computer Science\Practical\Programs\Zombie Survival\Zombie Survival\obj\Debug\Zombie Survival.csproj.CoreCompileInputs.cache
+C:\Saad\Computer Science\Practical\Programs\Zombie Survival\Zombie Survival\obj\Debug\Zombie Survival.exe
+C:\Saad\Computer Science\Practical\Programs\Zombie Survival\Zombie Survival\obj\Debug\Zombie Survival.pdb
+C:\Saad\Computer Science\Practical\Programs\Zombie Survival\Zombie Survival\obj\Debug\Zombie_Survival.frmMenu.resources
