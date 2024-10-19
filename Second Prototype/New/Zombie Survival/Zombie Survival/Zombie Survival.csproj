@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2436F8D5-5A30-45DB-99A8-55DFAC8AC47D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Zombie_Survival</RootNamespace>
+    <AssemblyName>Zombie Survival</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="lvlOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lvlOne.Designer.cs">
+      <DependentUpon>lvlOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuCampaign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuCampaign.Designer.cs">
+      <DependentUpon>MenuCampaign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZombieSurvival.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZombieSurvival.Designer.cs">
+      <DependentUpon>ZombieSurvival.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="lvlOne.resx">
+      <DependentUpon>lvlOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuCampaign.resx">
+      <DependentUpon>MenuCampaign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZombieSurvival.resx">
+      <DependentUpon>ZombieSurvival.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ammo-Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\healthDrop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zright.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zleft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ammo-label.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\health-label.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skull.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\item-pickup-37089.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loop-menu-preview-109594.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monster-death-grunt-131480.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monster-growl-140377.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rifle-or-shotgun-reload-6787.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sniper-rifle-firing-shot-1-39789.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sparkling_star_04-45859.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\videogame-death-sound-43894.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu_Music.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pickup_Sound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Player_Death_Sound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reload_Sound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shot_Sound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Star_Sound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zombie_Death_Sound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zombie_Growl_Sound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCampaign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnExit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnLvlOne.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnLvlThree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnLvlTwo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnResume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnReturn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSurvival.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upCampaign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\downCampaign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leftCampaign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rightCampaign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zdownCampaign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zleftCampaign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zupCampaign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zrightCampaign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
